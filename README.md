@@ -145,7 +145,7 @@ Response:
 
 ![image](https://github.com/ishusingh99/Demyst-Assignment/assets/55423606/657b4ea9-64f3-424d-9543-98293970539e)
 
-- Upon reviewing the Balance Sheet data, and then hitting the Submit Application button, we get to the following page.
+- Upon reviewing the Balance Sheet data, and then hitting the Submit Application button, we get to the following page where the Preassessment Result is displayed.
 
 #### URL 3 - `http://127.0.0.1:8000/preassessment/4`
 ![image](https://github.com/ishusingh99/Demyst-Assignment/assets/55423606/30ee7418-9562-4e11-aa6a-e1787fd44079)
