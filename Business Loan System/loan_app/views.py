@@ -20,7 +20,6 @@ def request_balance_sheet(request):
         business_name = data['business_name']
         year_established = data['year_established']
         loan_amount = data['loan_amount']
-        print(data)
         business = Business.objects.filter(name=business_name, year_established=year_established).first()
         if business:
             balance_sheets_val = BalanceSheet.objects.filter(business=business).all().values()
@@ -43,7 +42,6 @@ def preassessment(request, business_id):
         business = Business.objects.filter(id=business_id).first()
         if business:
             balance_sheets_val = BalanceSheet.objects.filter(business=business).all().values()
-            # to check whether balance sheets exist
             loan_application = LoanApplication.objects.filter(business__id=business_id).first()
             loan_amount = loan_application.loan_amount
             pre_assessment = calculate_pre_assessment(balance_sheets_val, loan_amount)
